@@ -365,6 +365,10 @@ Author URI: http://wwww.trn.hu/
 	behavior: url(css/iepngfix.htc);
 }
 
+/**
+ * Obsoleted : Oliver
+ *
+ *
 #about #about_contact span{
 	display: block;
 	background: url(../images/about/s_iso.png) 0 0 no-repeat;
@@ -372,3 +376,4 @@ Author URI: http://wwww.trn.hu/
 	height: 41px;
 	behavior: url(css/iepngfix.htc);
 }
+ */
