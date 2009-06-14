@@ -1,0 +1,401 @@
+/*
+Title: Goodies
+Description: CSS Information for www.volll.com's 'Goodies' section
+Author: Zsolt Vajda
+Author URI: http://wwww.trn.hu/
+*/
+
+		#goodies .subheader * {
+		}
+
+		#goodies .subheader {
+			position: relative;
+			height: 85px;
+		}
+
+		#goodies .subheader h2 {
+
+			padding: 0 0 5px 0;
+			margin: 0 0 15px 0;
+			border-bottom: 1px solid #366999;
+			font-size: 14px;
+			line-height: 21px;
+			font-weight: bold;
+		}
+
+		#goodies .subheader ul {
+			position: absolute;
+			top: 0;
+			right: 0;
+			list-style-type: none;
+		}
+
+		#goodies .subheader ul li {
+			margin: 0 0 0 5px;
+			float: left;
+		}
+		
+		#goodies .subheader ul li a:hover {
+			color: #fff;
+		}
+
+		#goodies .subheader ul li a {
+			display: block;
+			text-align: center;
+			line-height: 20px;
+			text-decoration: none;
+		}
+		
+		#goodies .subheader ul li a .link_left {
+			width: 5px;
+			height: 20px;
+			display: block;
+			float: left;
+			filter:alpha(opacity=25);
+			opacity:.25;	
+		}
+
+		#goodies .subheader ul li a .link_center {
+			display: block;
+			float: left;
+			height: 20px;
+			width: 10px;
+			position: relative;
+		} 
+
+		#goodies .subheader ul li a .link_center .link_bottom {
+			display: block;
+			width: 100%;
+			height: 20px;
+			filter:alpha(opacity=25);
+			opacity:.25;	
+		}
+
+		#goodies .subheader ul li a .link_center .link_top {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 20px;
+			line-height: 20px;
+			font-size: 12px;
+			font-family: 'Trebuchet MS', sans-serif;
+
+		}
+
+		#goodies .subheader ul li a .link_right {
+			width: 5px;
+			height: 20px;
+			display: block;
+			float: left;
+			filter:alpha(opacity=25);
+			opacity:.25;	
+		}
+		#goodies .subheader ul li a.active .link_left {	background: url(../images/goodies/selector.png) left 0px no-repeat; }
+		#goodies .subheader ul li a:hover .link_left { background: url(../images/goodies/selector.png) left -36px no-repeat; }
+		#goodies .subheader ul li a.active .link_bottom { background: url(../images/goodies/selector.png) -10px 0px no-repeat; }
+		#goodies .subheader ul li a:hover .link_bottom { background: url(../images/goodies/selector.png) -10px -36px no-repeat; }
+		#goodies .subheader ul li a.active .link_right { background: url(../images/goodies/selector.png) right 0px no-repeat; }
+		#goodies .subheader ul li a:hover .link_right {	background: url(../images/goodies/selector.png) right -36px no-repeat; }
+
+		#goodies #games.goodiebox {
+			position: absolute;
+			width: 350px;
+			top: 80px;
+			left: 25px;
+			z-index: 5;
+		}
+		
+		#goodies #games.goodiebox .subheader p {
+			width: 350px;
+		}
+
+		#goodies #games.goodiebox .game{
+			position: relative;
+			display: block;
+			width: 350px;
+			height: 70px;
+			margin-bottom: 10px;
+		}
+
+		#goodies #games.goodiebox .game .image {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+
+		#goodies #games.goodiebox .game div {
+			position: absolute;
+			width: 230px;
+			bottom: 0;
+			right: 0;
+		}
+
+		#goodies #games.goodiebox .game div h3 {
+			margin: 0 0 5px 0;
+		}
+
+		#goodies #games.goodiebox .game div h3 a {
+			font-size: 14px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		#goodies #games.goodiebox .game div p {
+			padding-right: 10px;
+		}
+
+
+		#goodies #wallpapers.goodiebox {
+			position: absolute;
+			width: 350px;
+			top: 80px;
+			left: 385px;
+			z-index: 5;
+		}
+
+		#goodies #wallpapers.goodiebox .wallpaperlisting {
+			width: 360px;
+			margin-left: -5px;
+		}
+
+		#goodies #wallpapers.goodiebox .wallpaperlisting .image img{
+			margin: 0 3px 5px 3px;
+		}
+
+		#goodies #screensavers.goodiebox {
+			position: absolute;
+			width: 230px;
+			top: 80px;
+			left: 745px;
+			z-index: 5;
+
+		}
+		
+		#goodies #screensavers.goodiebox .screensaver {
+			width: 230px;
+			height: 70px;
+			margin: 0 0 10px 0;
+			position: relative;
+		}
+
+		#goodies #screensavers.goodiebox .screensaver .image {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+
+
+		#goodies #screensavers.goodiebox .screensaver .text {
+			position: absolute;
+			width: 110px;
+			right: 0;
+			bottom: 0;
+		}
+		
+		#goodies #screensavers.goodiebox .screensaver .text h3 {
+			margin: 0 0 5px 0;
+		}
+		
+		#goodies #screensavers.goodiebox .screensaver .text h3 a {
+			font-size: 14px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		#goodies #screensavers.goodiebox .screensaver .text .links {
+		}
+
+		#goodies #screensavers.goodiebox .screensaver .text .links a {
+			background: url(../images/general/bullet.png) 0 5px  no-repeat;
+			padding-left: 10px;
+			font-weight: bold;
+			text-decoration: none;
+			display: block;
+			clear: both;
+		}
+
+		#goodies #screensavers.goodiebox .screensaver .text .links a:hover  {
+			background-image: url(../images/general/bullet_hover.gif);
+		}
+		
+		/* GOODIES ELEMENTS*/
+		#goodies #play {
+			width: 1000px;
+			height: 200px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+		#goodies #play #ground {
+			width: 1000px;
+			height: 200px;
+			position: relative;
+		}
+
+		#goodies #play #ground #s_flag {
+			position: absolute; 
+			bottom: 20px; 
+			left: 20px; 
+			width: 50px; 
+			height: 87px; 
+			background: url(../images/goodies/s_flag.png) 0 0 no-repeat;
+			behavior: url(css/iepngfix.htc);
+			z-index:2;
+		}
+
+		#goodies #play #ground #s_landing_unit {
+			position: absolute; 
+			top: 80px; 
+			left: 110px; 
+			width: 101px; 
+			height: 110px; 
+			background: url(../images/goodies/s_landing_unit.png) 0 0 no-repeat;
+				behavior: url(css/iepngfix.htc);
+
+					z-index:2;
+		}
+
+		#goodies #play #ground #s_landing_unit_shadow {
+			position: absolute; 
+			bottom: 3px; 
+			left: 93px; 
+			width: 135px; 
+			height: 17px; 
+			background: url(../images/goodies/s_landing_unit_shadow.png) 0 0 no-repeat;
+			behavior: url(css/iepngfix.htc);
+			z-index:1;
+		}
+
+		#goodies #play #ground #s_astronaut {
+			position: absolute; 
+			top: 144px; 
+			left: 280px; 
+			width: 34px; 
+			height: 46px; 
+			background: url(../images/goodies/s_astronaut.png) 0 0 no-repeat;
+				behavior: url(css/iepngfix.htc);
+
+					z-index:2;
+		}
+
+		#goodies #play #ground #s_astronaut_shadow {
+			position: absolute; 
+			bottom: 5px; 
+			left: 273px; 
+			width: 45px; 
+			height: 8px; 
+			background: url(../images/goodies/s_astronaut_shadow.png) 0 0 no-repeat;
+				behavior: url(css/iepngfix.htc);
+
+					z-index:1;
+		}
+
+		#goodies #play #ground #s_king_octopus {
+			position: absolute; 
+			top: 74px; 
+			left: 420px; 
+			width: 58px; 
+			height: 106px; 
+			background: url(../images/goodies/s_king_octopus.png) 0 0 no-repeat;
+				behavior: url(css/iepngfix.htc);
+
+					z-index:6;
+		}
+
+		#goodies #play #ground #s_king_octopus_shadow {
+			position: absolute; 
+			bottom: 5px; 
+			left: 430px; 
+			width: 42px; 
+			height: 9px; 
+			background: url(../images/goodies/s_king_octopus_shadow.png) 0 0 no-repeat;
+				behavior: url(css/iepngfix.htc);
+
+					z-index:1;
+		}
+
+		#goodies #play #ground #s_boy_octopus {
+			position: absolute; 
+			top: 140px; 
+			left: 580px; 
+			width: 52px; 
+			height: 52px; 
+			background: url(../images/goodies/s_boy_octopus.png) 0 0 no-repeat;
+				behavior: url(css/iepngfix.htc);
+
+					z-index:2;
+		}
+		
+		#goodies #play #ground #s_boy_octopus_shadow {
+			position: absolute; 
+			bottom: 3px; 
+			left: 583px; 
+			width: 42px; 
+			height: 9px; 
+			background: url(../images/goodies/s_king_octopus_shadow.png) 0 0 no-repeat;
+				behavior: url(css/iepngfix.htc);
+
+					z-index:1;
+		}
+
+		#goodies #play #ground #s_girl_octopus {
+			position: absolute; 
+			top: 148px; 
+			left: 680px; 
+			width: 50px; 
+			height: 42px; 
+			background: url(../images/goodies/s_girl_octopus.png) 0 0 no-repeat;
+				behavior: url(css/iepngfix.htc);
+
+					z-index:2;
+		}
+		
+		#goodies #play #ground #s_girl_octopus_shadow {
+			position: absolute; 
+			bottom: 5px; 
+			left: 683px; 
+			width: 42px; 
+			height: 9px; 
+			background: url(../images/goodies/s_king_octopus_shadow.png) 0 0 no-repeat;
+				behavior: url(css/iepngfix.htc);
+
+					z-index:1;
+		}
+		
+		#goodies #play #ground #s_umbrella {
+			position: absolute; 
+			bottom: 20px; 
+			right: 50px; 
+			width: 132px; 
+			height: 102px; 
+			background: url(../images/goodies/s_umbrella.png) 0 0 no-repeat;
+				behavior: url(css/iepngfix.htc);
+
+					z-index:2;
+		}
+
+		#goodies #play #ground #s_umbrella.closed {
+			background-position: 0 0;	
+		}
+
+		#goodies #play #ground #s_umbrella.opened {
+			background-position: 0 -102px;	
+		}
+
+		#goodies #play #ground #s_umbrella div {
+			width: 100%;
+			height: 100%;
+		}
+
+		#goodies #play #ground #s_umbrella.opened div
+		{
+			width: 103px;
+			height: 53px;
+		}
+
+		#goodies #play #ground #s_umbrella.closed div {
+			width: 39px;
+			height: 76px;
+			margin-left: 28px;
+		}

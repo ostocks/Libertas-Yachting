@@ -1,0 +1,226 @@
+#main #s_sheep1,
+#main #s_sheep2,
+#main #s_sheep3,
+#main #s_sheep4,
+#main #s_sheep5,
+#main #s_sheep6 {
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	position: absolute;
+	behavior: url(css/iepngfix.htc);
+        background-image: url(../images/main/s_sheep.gif);
+      z-index: 5;
+}
+
+#main #s_sheep1 { top: 495px; left: 149px; background-position: 0 -16px;}
+#main #s_sheep2 { top: 480px; left: 17px;  background-position: -16px -16px; }
+#main #s_sheep3 { top: 459px; left: 46px; background-position: -32px -16px;}
+#main #s_sheep4 { top: 470px; left: 105px; background-position: -48px -16px; }
+#main #s_sheep5 { top: 461px; left: 149px; background-position: -64px -16px; }
+#main #s_sheep6 { top: 453px; left: 121px; background-position: -80px -16px;; }
+
+#main #s_door {
+	position: absolute;
+	left: 53px;
+	top: 433px;
+	width: 31px;
+	height: 26px;
+	background: url(../images/main/s_opened_door.gif) 0 0 no-repeat;
+	z-index: 2;
+}
+
+#main #s_door div {
+	width: 18px;
+	height: 26px;
+}
+
+#main #s_door.closd {
+	background: url(../images/main/s_opened_door.gif) -500px 0 no-repeat;
+}
+
+#main #s_door.opend {
+	background: url(../images/main/s_opened_door.gif) 0px 0 no-repeat;
+}
+
+
+#main #s_ship {
+	position: absolute;
+	left: 800px;
+	top: 440px;
+	width: 106px;
+	height: 93px;
+	z-index: 2;
+}
+
+#main #s_ship #s_ship_container {
+	width: 106px; 
+	height: 90px;
+	poisition: relative;
+}
+
+#main #s_ship #s_ship_container #s_ship_blink{
+	width: 5px; 
+	height: 5px;
+	position: absolute;
+	top:0;
+	left: 29px;
+	background: url(../images/main/s_blink.gif) 0 0 no-repeat;
+	z-index:3;
+}
+
+#main #s_ship #s_ship_container #s_ship_bottom {
+	width: 106px;
+	height: 93px;
+	position: relative;
+	top: 3px;
+	left: 0;
+	filter:alpha(opacity=25);
+	opacity:.25;
+}
+
+
+#main #s_ship #s_ship_container #s_ship_bottom span {
+	width: 106px;
+	height: 90px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/main/s_ship.png) 0 0 no-repeat;
+	behavior: url(css/iepngfix.htc);
+	z-index: 1;
+
+}
+
+#main #s_ship #s_ship_container #s_ship_top {
+	width: 106px;
+	height: 80px;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	background: url(../images/main/s_ship.png) 0 0 no-repeat;
+	behavior: url(css/iepngfix.htc);
+	z-index: 2;
+} 
+
+#main #s_shining {
+	position: absolute;
+	top: 453px;
+	left: 540px;
+	width: 421px;
+	height: 41px;
+	background: url(../images/main/s_shining.gif) 0 0 no-repeat;
+	z-index: 1;
+}
+
+#main #maintext {
+	position: absolute;
+	top: 91px;
+	left: 8px;
+	
+}
+
+#main #maintext #col0 {
+	width: 497px;
+	height: 284px;
+	float: left;
+}
+
+#main #maintext #col1 *,
+#main #maintext #col2 * {
+	color: #3c6f83;
+}
+
+#main #maintext #col1 {
+	width: 240px;
+	float: left;
+}
+
+#main #maintext #col1 p,
+#main #maintext #col2 p {
+	color: #3c6f83;
+}
+
+#main #maintext #col1 p.intro {
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #08445d;
+}
+
+#main #maintext #col1 h2 {
+	font-size: 24px;
+	line-height: 24px;
+	color: #08445d;
+	font-weight: normal;
+	padding: 0 0 10px 0;
+}
+
+#main #maintext #col1 p {
+	width: 230px;
+	padding: 0 0 10px 0;  
+}
+
+#main #maintext #col2 p strong {
+	color: #08445d;
+}
+
+#main #maintext .special strong {
+	width: 40px;
+	float: left;
+	display: block;
+}
+
+#main #maintext #col2 {
+	padding-top: 24px;
+	width: 230px;
+	float: left;
+	line-height: 15px;
+}
+
+#main #maintext #col2 a.more {
+	font-weight: bold;
+	float: left;
+	padding: 2px 15px 2px 18px;
+	display: block;
+	background: url(../images/main/more.png) 0 3px no-repeat;
+}
+
+#main .header h1 {
+	display: block;
+	width: 170px;
+	height: 31px;
+	margin-top: 21px;
+	margin-left: 13px;
+	text-indent: -500px;
+	overflow: hidden;
+	background: url(../images/main/volll.png) 0px 0  no-repeat;
+	behavior: url(css/iepngfix.htc);
+
+}
+
+#main .header h1 a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+
+/**
+ * Digg Dialog Style
+ * 
+ * Used for the reservation and such and destinations 
+ * Source http://www.smashingmagazine.com/2009/01/12/10-useful-web-application-interface-techniques/
+ **/
+.dialog {  
+     position: absolute;  
+     left: 50%;  
+     margin-left: -315px;  
+     width: 630px;  
+     z-index: 100001;  
+  
+}  
+.dialog .body {  
+    background: url(/img/dialog.png) 0 0; /* semi-transparent .png image */  
+    padding: 40px 13px 10px 40px;  
+}  

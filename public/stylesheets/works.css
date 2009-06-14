@@ -1,0 +1,288 @@
+/*
+Title: Works
+Description: CSS Information for www.volll.com's 'Works' section
+Author: Zsolt Vajda
+Author URI: http://wwww.trn.hu/
+*/
+		
+#works div.content {
+	background: url(../images/works/bg1.png) 0 0 no-repeat;
+	width: 1000px;
+	height: 550px;
+}
+
+#works div.content .header { 
+	border: none;
+	z-index:2;
+}
+
+#works div.content #worklisting {
+	position: absolute;
+	top: 72px;
+	left: 24px;
+	z-index:2;
+}
+
+#works div.content #worklisting ul { 
+	margin: 0 10px 0 0;
+	padding: 0;
+	list-style-type: none;
+	float: left;
+	display: block;
+}
+
+#works div.content #worklisting ul li {
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+
+#works div.content #worklisting ul li a {
+	text-decoration: none;
+	display: block;
+	position: relative;
+	width: 230px;
+	height: 20px;
+	overflow: hidden !important;
+	margin: 0;
+	padding: 0;
+}
+
+#works div.content #worklisting ul li a.active .selector {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 230px;
+	height: 20px;
+	overflow: hidden;
+	display: block;
+	filter:alpha(opacity=20);
+	opacity:.20;
+}
+
+#works div.content #worklisting ul li a.active .selector span {
+	display: block;
+	width: 230px;
+	height: 20px;
+	background: url(../images/works/selector.png) 0 0 no-repeat;
+}
+
+
+#works div.content #worklisting ul li a:hover .selector {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 230px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	filter:alpha(opacity=20);
+	opacity:.20;
+}
+
+#works div.content #worklisting ul li a:hover .selector span {
+	display: block;
+	width: 230px;
+	height: 20px;
+	background: url(../images/works/selector.png) 0 -30px no-repeat;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#works div.content #worklisting ul li a .project_name {
+	font-weight: bold;
+	z-index: 666;
+	top: 3px;
+	left: 10px;
+	position: relative;
+}
+
+#works div.content #worklisting ul li a .project_type {
+	font-weight: normal;
+	position: absolute;
+	right: 10px;
+	top: 3px;
+	z-index: 667;
+}
+
+#works div.content h2 {
+	position: absolute;
+	top: 235px;
+	left: 25px;
+	font-size: 14px;
+	line-height: 14px;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+#works div.content .projecttitle {
+	display: block;
+	position: absolute;
+	left: 25px;
+	top: 260px;
+	width: 350px;
+	height: 70px;
+	z-index: 2;
+}
+
+#works div.content .projecttitle h3 { 
+	line-height: 24px;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 8px 0 0 0;
+}
+
+#works div.content .projecttitle a { 
+	text-decoration: none;
+	padding-right: 13px;
+}
+#works div.content .projecttitle a:hover { 
+	background: url(../images/general/jumperlink.png) 3px right no-repeat;
+}
+
+
+#works div.content .projectinfo {
+	position: absolute;
+	left: 25px;
+	top: 310px;
+	display: block;
+	width: 350px;
+	z-index:2;
+}
+
+#works div.content .projectinfo p {
+}
+
+#works div.content .projectinfo .links {
+	border-top: 1px solid #4a7aaa;
+	padding-top: 10px;
+	margin-top: 20px;
+	z-index:2;
+}
+
+#works div.content .projectinfo .links a {
+	background: url(../images/general/bullet.png) 0 5px  no-repeat;
+	padding-left: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	clear: both;
+}
+
+#works div.content .projectinfo .links a:hover  {
+	background-image: url(../images/general/bullet_hover.gif);
+	behavior: url(css/iepngfix.htc);
+}
+
+#works div.content .projectimages:hover {
+	cursor: pointer;
+	
+}
+
+#works div.content .projectimages {
+	width: 580px;
+	height: 270px;
+	position: absolute;
+	left: 399px;
+	top: 265px;
+	background: url(../refs/saatchi/images/cover_arielkaltaktiv.jpg) 0 0 no-repeat;
+	z-index:2;
+}
+
+#works div.content .projectimages div {
+	width: 580px;
+	height: 270px;
+	position: absolute;
+	background-image: url(../images/works/image_corner.png);
+	behavior: url(css/iepngfix.htc);
+	z-index:3;
+}
+
+#works div.content #subloader {
+	width: 580px;
+	height: 270px;
+	left: 399px;
+	top: 265px;
+	background: #fff url(../images/works/loading.gif) center center no-repeat;
+	display: block;
+	position: absolute;
+	z-index: 0;
+}
+
+#works div.content .projectlogo {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	bottom: 4px;
+	left: 11px;
+	background-repeat: no-repeat;
+	background: position: bottom left;
+	filter:alpha(opacity=10);
+	opacity: 0.04;
+	z-index:1;
+}
+
+#works #s_fish1 {
+	position: absolute;
+	left: 50px;
+	top: 518px;
+	width: 46px;
+	height: 22px;
+	background: url(../images/works/s_fish.gif) 0 0 no-repeat;
+	z-index: 3;
+}
+
+#works #s_fish2 {
+	position: absolute;
+	left: 100px;
+	top: 518px;
+	width: 46px;
+	height: 22px;
+	background: url(../images/works/s_fish.gif) -46px 0 no-repeat;
+	z-index: 3;
+}
+
+#works #s_fish3 {
+	position: absolute;
+	left: 150px;
+	top: 518px;
+	width: 46px;
+	height: 22px;
+	background: url(../images/works/s_fish.gif) -92px 0 no-repeat;
+	z-index: 3;
+}
+
+
+#works #s_fish4 {
+	position: absolute;
+	left: 200px;
+	top: 518px;
+	width: 46px;
+	height: 22px;
+	background: url(../images/works/s_fish.gif) -138px 0 no-repeat;
+	z-index: 3;
+}
+
+#works #s_fish5 {
+	position: absolute;
+	left: 250px;
+	top: 518px;
+	width: 46px;
+	height: 22px;
+	background: url(../images/works/s_fish.gif) -186px 0 no-repeat;
+	z-index: 3;
+}
+
+#works #s_scubadog {
+	position: absolute;
+	left: 320px;
+	top: 508px;
+	width: 59px;
+	height: 38px;
+	background: url(../images/works/s_scubadog.png) 0 0 no-repeat;
+	behavior: url(css/iepngfix.htc);
+	z-index: 4;
+}

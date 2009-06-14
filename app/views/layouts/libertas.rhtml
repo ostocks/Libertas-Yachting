@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu" lang="hu">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Libertas yachting</title>
+
+
+	<%= stylesheet_link_tag "basic" %>
+	<%= stylesheet_link_tag "about" %>
+	<%= stylesheet_link_tag "main" %>
+	<%= stylesheet_link_tag "works" %>
+	<%= stylesheet_link_tag "goodies" %>
+	<%= stylesheet_link_tag "inters" %>
+
+	<%= javascript_include_tag "volll" %>
+	<%= javascript_include_tag "volll_refs" %>
+	<%= javascript_include_tag "swfobject" %>
+
+
+</head>
+<body>
+<div id="rap"> 
+<a name="top"></a>
+	<div id="inter0">
+		<div class="sky" id="roll_sky_1">
+			<div class="fitter">
+				<div class="content">
+					<div id="s_moon"></div>
+					<div id="s_spaceboy"></div>
+
+					<div id="s_spacegirl"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">volllinit('inter0');</script>
+
+	<div id="about"> 
+		<%= render :partial => "libertas/about" %>
+	</div>
+	<script type="text/javascript">volllinit('about');</script>
+	<div id="inter1">
+		<div class="fitter">
+			<div class="content" style="width:100%; overflow:hidden;">
+
+				<div id="s_cloud1"></div>
+				<div id="s_cloud2"></div>
+				<div id="s_cloud3"></div>
+				<div id="s_cloud4"></div>
+				<div id="s_cloud5"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">volllinit('inter1');</script>
+
+	<div id="main">
+		<%= render :partial => "libertas/main" %> 
+	</div>
+	<script type="text/javascript">volllinit('main');</script>
+	<div id="inter2">
+		<div class="fitter">
+			<div class="content"> </div>
+		</div>
+	</div>
+
+	<div id="works">
+		<%= render :partial => "libertas/works" %>
+	</div>
+	<script type="text/javascript">volllinit('works');</script>
+	<div id="inter3">
+		<div class="fitter">
+			<div class="content"> </div>
+
+		</div>
+	</div>
+	<div id="goodies"> 
+		<%= render :partial => "libertas/goodies" %>
+	</div>
+	<div id="inter4"> </div>
+	<script type="text/javascript">volllinit('goodies');</script>
+</div>
+
+</body>
+</html>

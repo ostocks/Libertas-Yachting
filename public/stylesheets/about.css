@@ -1,0 +1,374 @@
+/*
+Title: About
+Description: CSS Information for www.volll.com's 'About' section
+Author: Zsolt Vajda
+Author URI: http://wwww.trn.hu/
+*/
+
+#about div.content {
+}
+#about #s_robot {
+	position: absolute;
+	top: 270px;
+	left: 636px;
+	width: 338px;
+	height: 243px;
+	margin: 10px 0 0 6px;
+	background: url(../images/about/s_robot.png) 0 0 no-repeat;
+	behavior: url(css/iepngfix.htc);
+}
+
+#about #s_robot #s_robot_blink {
+	width: 338px;
+	height: 243px;
+	background: url(../images/about/s_robot_blink.gif) 0 0 no-repeat;
+}
+
+#about #abouttext ul {
+	margin: 60px 20px 0 0;
+	padding: 0;
+	list-style-type: none;
+	float: left;
+	width: 120px;
+}
+
+#about #abouttext ul li {
+}
+#about #abouttext ul li:hover,
+#about #abouttext ul li.active {
+
+}
+
+#about #abouttext ul li a {
+	font-family: 'Trebuchet MS', sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 32px;
+	text-decoration: none;
+	text-align: right;
+	width: 80px;
+	height: 32px;
+	display: block;
+}
+
+#about #abouttext {
+	position: absolute;
+	top: 50px;
+	left: 25px;
+}
+
+#about #abouttext .abouttextbox {
+	width: 600px;
+	float: left;
+}
+
+#about #abouttext .abouttextbox .about_col1 {
+	width: 370px;
+	float: left;
+}
+#about #abouttext .abouttextbox .about_col1 h2 {
+	width: 350px;
+}
+#about #abouttext .abouttextbox .about_col1 .imgdiv,
+#about #abouttext .abouttextbox .about_col2 .imgdiv {
+	behavior: url(css/iepngfix.htc);
+}
+
+#about #abouttext .abouttextbox .about_col1 p,
+#about #abouttext .abouttextbox .about_col2 p {
+	margin: 0 15px 15px 0;
+}
+
+#about .abouttextbox p.special strong {
+	width: 160px;
+	float: left;
+	display: block;
+}
+
+#about #abouttext .abouttextbox .about_col2 {
+	width: 230px;
+	float: left;
+}
+
+#about #abouttext .abouttextbox img {
+}
+
+
+#about #abouttext .abouttextbox .about_col1 h2,
+#about #abouttext .abouttextbox .about_col2 h2,
+#about #abouttext .abouttextbox .about_col1 h3,
+#about #abouttext .abouttextbox .about_col2 h3{
+	font-size: 14px;
+	border-bottom: 1px solid #7c7fb5;
+	font-weight: bold;
+	padding: 0 0 10px 0;
+	margin: 30px 0 10px 0;
+}
+
+#about #abouttext .abouttextbox .about_col1 h2 a,
+#about #abouttext .abouttextbox .about_col2 h2 a,
+#about #abouttext .abouttextbox .about_col1 h3 a,
+#about #abouttext .abouttextbox .about_col2 h3 a{ 
+	font-size: 14px;
+	text-decoration: none;
+}
+
+#about #abouttext ul li a:hover {
+			color: #fff;
+		}
+
+#about #abouttext ul li a {
+			display: block;
+			text-align: left;
+			line-height: 26px;
+			text-decoration: none;
+			width: 120px;
+			height: 26px;
+			position: relative;
+		}
+		
+#about #abouttext ul li a .link_bottom {
+			display: block;
+			width: 120px;
+			height: 26px;
+			filter: alpha(opacity=25);
+			opacity: 0.25;	
+		}
+
+#about #abouttext ul li a .link_top {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100px;
+			height: 26px;
+			margin-left: 10px;
+			line-height: 26px;
+			font-size: 13px;
+			font-family: 'Trebuchet MS', sans-serif;
+
+		}
+#about #abouttext ul li a.active .link_bottom {	background: url(../images/about/selector.png) left 0px no-repeat; }
+#about #abouttext ul li a:hover .link_bottom { background: url(../images/about/selector.png) left -36px no-repeat; }
+
+
+#s_pandadisplay {
+	text-align: left;
+	width: 230px;
+	height: 250px;
+	position: relative;
+	display: block;
+	float: left;
+}
+
+#s_pandadisplay #s_pandadisplay_bottom {
+	width: 222px;
+	height: 127px;
+	position: absolute;
+	top: 15px;
+	left: 3px;
+	background: url(../images/about/s_display.png) 0 0 repeat-y;
+}
+
+#s_pandadisplay .s_pandadisplay_top {
+	top: 0;
+	left: 0;
+	width: 230px;
+	height: 170px;
+	position: absolute;
+	background: url(../images/about/s_pandadisplay.png) 0 0 no-repeat;
+	behavior: url(css/iepngfix.htc);
+}
+
+#s_pandadisplay .s_pandadisplay_controls {
+	position: absolute;
+	top: 150px;
+	right: 10px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 11px;
+	color: #fff;
+	font-weight: normal;
+	z-index:3;
+
+}
+
+#s_pandadisplay .s_pandadisplay_controls a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#s_pandadisplay .s_pandadisplay_controls a:hover {
+	text-decoration: underline;
+}
+
+#s_pandadisplay .s_pandadisplay_content {
+	position: absolute;
+	top: 180px;
+	left: 0px;
+	width: 230px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 11px;
+	color: #fff;
+	font-weight: normal;
+	line-height: 13px;
+}
+#s_pandadisplay .s_pandadisplay_content h3,
+#s_pandadisplay .s_pandadisplay_content h4 {
+	margin: 0 0 10px 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	font-size: 14px;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+#s_pandadisplay .s_pandadisplay_content p {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+#s_pandaid {
+	text-align: left;
+	width: 230px;
+	height: 350px;
+	position: relative;
+	display: block;
+	float: left;
+
+}
+#s_pandaid #s_pandaid_top {
+	width: 213px;
+	height: 117px;
+	position: absolute;
+	top: 18px;
+	left: 8px;
+	background: url(../images/about/s_id.png) 0 0 repeat-y;
+	z-index: 2;
+}
+
+#s_pandaid .s_pandaid_bottom {
+	top: 0;
+	left: 0;
+	width: 230px;
+	height: 170px;
+	position: absolute;
+	background: url(../images/about/s_pandaid.png) 0 2px no-repeat;
+	behavior: url(css/iepngfix.htc);
+	z-index: 1;
+}
+
+#s_pandaid .s_pandaid_controls {
+	position: absolute;
+	top: 150px;
+	right: 10px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 11px;
+	color: #fff;
+	font-weight: normal;
+	z-index:3;
+}
+
+#s_pandaid .s_pandaid_controls a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#s_pandaid .s_pandaid_controls a:hover {
+	text-decoration: underline;
+}
+
+#s_pandaid .s_pandaid_content {
+	position: absolute;
+	top: 180px;
+	left: 0px;
+	width: 230px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 11px;
+	color: #fff;
+	font-weight: normal;
+	line-height: 13px;
+}
+
+#s_pandaid .s_pandaid_content h3, 
+#s_pandaid .s_pandaid_content h4 {
+	margin: 0 0 10px 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	font-size: 14px;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+#s_pandaid .s_pandaid_content p {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+#about form div {
+	clear: both;
+	width: 350px;
+	height: 25px;
+}
+
+
+#about form div p{
+	clear: both;
+	padding-left: 20px;
+	background: url(../images/about/warning_icon.gif) 0 0 no-repeat;
+}
+
+#about form div label {
+	width: 100px;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 20px;
+	line-height: 28px;
+}
+
+#about form div input {
+	float: left;
+	width: 250px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	background: #88c5f6;
+	font-size: 14px;
+	color: #fff;
+	border: 0;
+}
+
+#about form div textarea {
+	float: left;
+	width: 250px !important;
+	height: 90px;
+	margin: 0;
+	padding: 0;
+	background: #88c5f6;
+	font-size: 11px;
+	color: #fff;
+	border: 0;
+}
+
+#about form #about_contact_submit {
+	float: right;
+	margin: 10px 20px 0 0;
+}
+
+#about #about_who span {
+	display: block;
+	float: right; 
+	margin: 0 20px 0 10px;
+	background: url(../images/about/s_pandaflag.png) 0 0 no-repeat;
+	width: 64px;
+	height: 102px;
+	behavior: url(css/iepngfix.htc);
+}
+
+#about #about_contact span{
+	display: block;
+	background: url(../images/about/s_iso.png) 0 0 no-repeat;
+	width: 68px;
+	height: 41px;
+	behavior: url(css/iepngfix.htc);
+}

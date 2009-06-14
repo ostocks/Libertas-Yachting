@@ -1,0 +1,85 @@
+/*
+Title: Inters
+Description: CSS Information for www.volll.com's intersection stuff
+Author: Zsolt Vajda
+Author URI: http://wwww.trn.hu/
+*/
+
+#inter0 #s_spaceboy {
+	position: absolute;
+	top: 70px;
+	left: 735px;
+	width: 75px;
+	height: 70px;
+	background: url(../images/inter0/s_spaceboy.png) 0 0 no-repeat;
+	behavior: url(css/iepngfix.htc);
+}
+
+#inter0 #s_spacegirl {
+	position: absolute;
+	top: 33px;
+	left: 839px;
+	width: 66px;
+	height: 68px;
+	background: url(../images/inter0/s_spacegirl.png) 0 0 no-repeat;
+	behavior: url(css/iepngfix.htc);
+}
+
+#inter0 #s_moon {
+	position: absolute;
+	top: 0;
+	left: 30px;
+	width: 937px;
+	height: 123px;
+	background: url(../images/inter0/s_moon.png) 0 0 no-repeat;
+}
+
+#inter1 #s_cloud1 {
+	position: absolute;
+	top: 50px;
+	left: 630px;
+	width: 219px;
+	height: 97px;
+	background: url(../images/inter1/s_cloud1.png) 0 0 no-repeat;
+	behavior: url(css/iepngfix.htc);
+}
+
+#inter1 #s_cloud2 {
+	position: absolute;
+	top: 120px;
+	left: 350px;
+	width: 128px;
+	height: 66px;
+	background: url(../images/inter1/s_cloud2.png) 0 0 no-repeat;
+	behavior: url(css/iepngfix.htc);
+}
+
+#inter1 #s_cloud3 {
+	position: absolute;
+	top: 30px;
+	left: 900px;
+	width: 51px;
+	height: 34px;
+	background: url(../images/inter1/s_cloud3.png) 0 0 no-repeat;
+	behavior: url(css/iepngfix.htc);
+}
+
+#inter1 #s_cloud4 {
+	position: absolute;
+	top: 30px;
+	left: 120px;
+	width: 88px;
+	height: 49px;
+	background: url(../images/inter1/s_cloud4.png) 0 0 no-repeat;
+	behavior: url(css/iepngfix.htc);
+}
+
+#inter1 #s_cloud5 {
+	position: absolute;
+	top: 103px;
+	left: 130px;
+	width: 219px;
+	height: 97px;
+	background: url(../images/inter1/s_cloud1.png) 0 0 no-repeat;
+	behavior: url(css/iepngfix.htc);
+}
