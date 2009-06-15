@@ -13223,3 +13223,1733 @@ ActionController::RoutingError (No route matches "/refs/saatchi/images/cover_ari
   /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 86.214.141.49 at 2009-06-15 00:56:26) [GET]
+
+NoMethodError (undefined method `active_scaffold' for Admin::TestimonialsController:Class):
+  app/controllers/admin/testimonials_controller.rb:5
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.4ms)
+Rendered rescues/_request_and_response (4.6ms)
+Rendering rescues/layout (internal_server_error)
+ActiveScaffold: extending RESTful routes for testimonial
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mTestimonial Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+
+
+Processing Admin::TestimonialsController#index (for 86.214.141.49 at 2009-06-15 01:04:24) [GET]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `testimonials` [0m
+  [4;35;1mTestimonial Load (0.7ms)[0m   [0mSELECT `testimonials`.* FROM `testimonials` ORDER BY testimonials.`id` ASC LIMIT 0, 15[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT `testimonials`.* FROM `testimonials` ORDER BY testimonials.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/admin
+Rendering list
+Rendered _list_header (73.0ms)
+Rendered _list_column_headings (29.6ms)
+Rendered _messages (3.1ms)
+Rendered _list (61.5ms)
+Completed in 301ms (View: 229, DB: 5) | 200 OK [http://www.meuh-meuh.net/admin/testimonials]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTestimonial Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+
+
+Processing Admin::TestimonialsController#new (for 86.214.141.49 at 2009-06-15 01:04:35) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (4.7ms)
+Rendered _form_attribute (2.0ms)
+Rendered _form_attribute (2.0ms)
+Rendered _form (27.6ms)
+Rendered _create_form (52.8ms)
+Rendered _messages (3.2ms)
+Rendered _list_inline_adapter (16.9ms)
+Completed in 139ms (View: 25, DB: 0) | 200 OK [http://www.meuh-meuh.net/admin/testimonials/new?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTestimonial Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+
+
+Processing Admin::TestimonialsController#create (for 86.214.141.49 at 2009-06-15 01:11:12) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sLX6dbdI1dLZMtYa5vR98RYejXVcW9DEPWFYOQLVblU=", "record"=>{"title"=>"Best holidays Ever!", "author"=>"O.J  Stocks", "testimonial"=>"From the start there was a great feeling, i loved the dolphins."}}
+  [4;35;1mSQL (0.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mTestimonial Create (0.6ms)[0m   [0;1mINSERT INTO `testimonials` (`created_at`, `title`, `author`, `updated_at`, `testimonial`) VALUES('2009-06-14 23:11:12', 'Best holidays Ever!', 'O.J Stocks', '2009-06-14 23:11:12', 'From the start there was a great feeling, i loved the dolphins.')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+Rendering on_create
+Rendered _list_actions (12.7ms)
+Rendered _list_record (434.8ms)
+Rendered _messages (3.1ms)
+Completed in 532ms (View: 510, DB: 4) | 200 OK [http://www.meuh-meuh.net/admin/testimonials/create]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mTestimonial Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+
+
+Processing Admin::TestimonialsController#new (for 86.214.141.49 at 2009-06-15 01:11:20) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (4.8ms)
+Rendered _form_attribute (2.1ms)
+Rendered _form_attribute (2.1ms)
+Rendered _form (27.8ms)
+Rendered _create_form (51.8ms)
+Rendered _messages (3.1ms)
+Rendered _list_inline_adapter (17.4ms)
+Completed in 139ms (View: 26, DB: 0) | 200 OK [http://www.meuh-meuh.net/admin/testimonials/new?_method=get&adapter=_list_inline_adapter]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mTestimonial Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+
+
+Processing Admin::TestimonialsController#create (for 86.214.141.49 at 2009-06-15 01:15:23) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sLX6dbdI1dLZMtYa5vR98RYejXVcW9DEPWFYOQLVblU=", "record"=>{"title"=>"What a dream come true", "author"=>"J.L Smith", "testimonial"=>"Me and my friend checked out the website and said i want  to sail with them!"}}
+  [4;36;1mSQL (0.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTestimonial Create (0.6ms)[0m   [0mINSERT INTO `testimonials` (`created_at`, `title`, `author`, `updated_at`, `testimonial`) VALUES('2009-06-14 23:15:23', 'What a dream come true', 'J.L Smith', '2009-06-14 23:15:23', 'Me and my friend checked out the website and said i want to sail with them!')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+Rendering on_create
+Rendered _list_actions (11.1ms)
+Rendered _list_record (42.3ms)
+Rendered _messages (3.0ms)
+Completed in 143ms (View: 121, DB: 4) | 200 OK [http://www.meuh-meuh.net/admin/testimonials/create]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTestimonial Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+
+
+Processing Admin::TestimonialsController#new (for 86.214.141.49 at 2009-06-15 01:15:31) [GET]
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+Rendered _form_attribute (4.8ms)
+Rendered _form_attribute (2.3ms)
+Rendered _form_attribute (2.1ms)
+Rendered _form (30.4ms)
+Rendered _create_form (56.1ms)
+Rendered _messages (3.2ms)
+Rendered _list_inline_adapter (17.1ms)
+Completed in 305ms (View: 180, DB: 0) | 200 OK [http://www.meuh-meuh.net/admin/testimonials/new?_method=get&adapter=_list_inline_adapter]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTestimonial Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+
+
+Processing Admin::TestimonialsController#create (for 86.214.141.49 at 2009-06-15 01:16:20) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sLX6dbdI1dLZMtYa5vR98RYejXVcW9DEPWFYOQLVblU=", "record"=>{"title"=>"Love you all !", "author"=>"Arthur C Clark", "testimonial"=>"I was looking for the time warp but found sailling much better !"}}
+  [4;35;1mSQL (0.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mTestimonial Create (0.6ms)[0m   [0;1mINSERT INTO `testimonials` (`created_at`, `title`, `author`, `updated_at`, `testimonial`) VALUES('2009-06-14 23:16:20', 'Love you all !', 'Arthur C Clark', '2009-06-14 23:16:20', 'I was looking for the time warp but found sailling much better !')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+Rendering on_create
+Rendered _list_actions (12.6ms)
+Rendered _list_record (41.4ms)
+Rendered _messages (2.9ms)
+Completed in 138ms (View: 117, DB: 4) | 200 OK [http://www.meuh-meuh.net/admin/testimonials/create]
+ActiveScaffold: extending RESTful routes for testimonial
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 01:30:59) [GET]
+
+NameError (uninitialized constant LibertasController::Testimonials):
+  app/controllers/libertas_controller.rb:19:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (91.3ms)
+Rendered rescues/_request_and_response (4.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 01:31:16) [GET]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mTestimonial Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+
+NoMethodError (undefined method `get_last_testimonials' for #<Class:0x29340868>):
+  app/controllers/libertas_controller.rb:19:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (199.5ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 01:31:41) [GET]
+  [4;35;1mTestimonial Load (0.7ms)[0m   [0mSELECT * FROM `testimonials` ORDER BY testimonials.id DESC LIMIT 1[0m
+Rendering template within layouts/libertas
+Rendering libertas/index
+Rendered libertas/_about (21.4ms)
+Rendered libertas/_main (13.3ms)
+Rendered libertas/_works (19.7ms)
+Rendered libertas/_goodies (16.7ms)
+Completed in 157ms (View: 144, DB: 1) | 200 OK [http://www.meuh-meuh.net/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 86.214.141.49 at 2009-06-15 01:31:45) [GET]
+
+ActionController::RoutingError (No route matches "/swf/vollltv.swf" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 86.214.141.49 at 2009-06-15 01:31:48) [GET]
+
+ActionController::RoutingError (No route matches "/refs/saatchi/images/cover_arielkaltaktiv.jpg" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 01:34:12) [GET]
+  [4;35;1mTestimonial Load (0.7ms)[0m   [0mSELECT * FROM `testimonials` ORDER BY testimonials.id DESC LIMIT 1[0m
+Rendering template within layouts/libertas
+Rendering libertas/index
+Rendered libertas/_about (34.1ms)
+Rendered libertas/_main (0.4ms)
+Rendered libertas/_works (0.4ms)
+Rendered libertas/_goodies (0.4ms)
+Completed in 67ms (View: 54, DB: 1) | 200 OK [http://www.meuh-meuh.net/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 86.214.141.49 at 2009-06-15 01:34:15) [GET]
+
+ActionController::RoutingError (No route matches "/swf/vollltv.swf" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 86.214.141.49 at 2009-06-15 01:34:18) [GET]
+
+ActionController::RoutingError (No route matches "/refs/saatchi/images/cover_arielkaltaktiv.jpg" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 01:57:35) [GET]
+  [4;35;1mTestimonial Load (0.8ms)[0m   [0mSELECT * FROM `testimonials` ORDER BY testimonials.id DESC LIMIT 1[0m
+Rendering template within layouts/libertas
+Rendering libertas/index
+ERROR: compiling _run_rhtml_app47views47libertas47_about46rhtml_locals_about_object RAISED compile error
+/usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:44: syntax error, unexpected kDO, expecting kEND
+..._with_index {|item, index|} do |t| ; @output_buffer.concat "...
+                              ^
+/usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:164: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_rhtml_app47views47libertas47_about46rhtml_locals_about_object(local_assigns)
+            old_output_buffer = output_buffer;about = local_assigns[:about];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<a name=\"section_about\"></a>\n<a name=\"section_about_who\"></a><a name=\"section_about_contact\"></a>\n<div class=\"sky\"  id=\"roll_sky_2\">\n\n  <div class=\"fitter\">\n    <div class=\"content\">\n      <div class=\"header\">\n        <h1><a href=\"#section_about\" onclick=\"return smoothto('section_about');\">About us</a></h1>\n        <ul>\n          <li><a href=\"#section_about\"   onclick=\"return smoothto('section_about');\" class=\"active\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 40px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">About</span></span><span class=\"link_right\"></span></span></a></li>\n          <li><a href=\"#section_main\"    onclick=\"return smoothto('section_main');\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 30px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">Main</span></span><span class=\"link_right\"></span></span></a></li>\n          <li><a href=\"#section_works\"   onclick=\"return smoothto('section_works');\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 40px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">Boats</span></span><span class=\"link_right\"></span></span></a></li>\n          <li><a href=\"#section_goodies\" onclick=\"return smoothto('section_goodies');\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 50px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">Marinas</span></span><span class=\"link_right\"></span></span></a></li>\n        </ul>\n      </div>\n      <div style=\"visibility:hidden; height:0; overflow:hidden top:0; left:0;\"> <img src=\"images/about/s_display.png\" alt=\"\" /> <img src=\"images/about/s_pandadisplay.png\" alt=\"\" /> </div>\n      <div id=\"abouttext\">\n\n        <ul>\n          <li><a href=\"#section_about_who\" onclick=\"tab_select_about(this.id);return smoothto('section_about_who');\" id=\"link_about_who\" class=\"active\"><span class=\"link_bottom\"></span><span class=\"link_top\">Who we are</span></a></li>\n          <li><a href=\"#section_about_contact\" onclick=\"tab_select_about(this.id);return smoothto('section_about_contact');\" id=\"link_about_contact\"><span class=\"link_bottom\"></span><span class=\"link_top\">Contact us</span></a></li>\n        </ul>\n        <div id=\"about_who\" class=\"abouttextbox\">\n          <div class=\"about_col1\">\n            <h2>About us</h2>\n\n            <span></span>\n            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n            <p>estibulum sollicitudin malesuada arcu, non porttitor tortor accumsan sit amet.</p>\n            <p>Phasellus luctus sem nibh, nec adipiscing lacus. Aliquam id magna a sapien semper blandit id eu ligula. Donec interdum, erat dignissim tincidunt ornare, leo nisi blandit enim.</p>\n            <p>Proin nunc magna, auctor at dictum ac, suscipit nec urna. Mauris viverra sagittis ornare. Aliquam blandit velit quis leo porta vestibulum non ac eros. Donec pellentesque felis vel erat accumsan vestibulum consequat massa ornare. Nam non elementum nulla. In dapibus purus et ante consequat ut tristique eros aliquam. Sed et mauris enim. Ut consequat lectus at diam mollis sed semper sem auctor.</p>\n\n            <p>Proin commodo est et mauris vehicula in gravida erat facilisis. Sed id ante vitae ligula elementum scelerisque non quis ipsum. Proin commodo est et mauris vehicula in gravida erat facilisis. Sed id ante vitae ligula elementum scelerisque non quis ipsum.</p>\n            <p>Nullam vel ligula felis, nec accumsan nibh. Maecenas at laoreet tellus. Aliquam vitae tortor eget augue aliquet hendrerit.</p>\n          </div>\n          <div class=\"about_col2\">\n            <h2>What are people saying about us</h2>\n            <div id=\"s_pandaid\">\n\n              <div class=\"s_pandaid_bottom\"></div>\n              <div id=\"s_pandaid_top\"></div>\n              <div class=\"s_pandaid_controls\"> <a href=\"#\" onclick=\"return dopanda('id_top','prev');\">prev</a> / <a href=\"#\" onclick=\"return dopanda('id_top','next');\">next</a> </div>\n\n              "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  @testimonial.each_with_index {|item, index|} do |t| ; @output_buffer.concat "\n                "
+; @output_buffer.concat(( debug item ).to_s); @output_buffer.concat "\n              "
+;  end ; @output_buffer.concat " \n              <div id=\"s_pandaid_top_content\" class=\"s_pandaid_content\">\n                <h3>trn</h3>\n\n                <p>Graphic Artist</p>\n                <p>Works as a graphic artist.</p>\n              </div>\n              <div id=\"s_pandaid_top_0\" style=\"display:none;\">\n                <h3>davidope</h3>\n                <p>creative director and CEO</p>\n                <p>.</p>\n\n              </div>\n              <div id=\"s_pandaid_top_1\" style=\"display:none;\">\n                <h3>Ati de Luxe.</h3>\n                <p>Finances</p>\n                <p>.</p>\n              </div>\n              <div id=\"s_pandaid_top_2\" style=\"display:none;\">\n\n                <h3>Robby, the robot</h3>\n                <p>Official awesome robot</p>\n                <p>A friendly robot from next door, usually he's in the office, chillin. out.</p>\n              </div>\n              <div id=\"s_pandaid_top_3\" style=\"display:none;\">\n                <h3>trn</h3>\n                <p>Graphic Artist</p>\n\n                <p>Works as a graphic artist.</p>\n              </div>  \n            </div>\n          </div>\n        </div>\n      </div>\n      <div id=\"about_contact\" style=\"display:none;\" class=\"abouttextbox\">\n        <div class=\"about_col1\">\n          <h2>Contact us</h2>\n\n          <p>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna !\n          </p>\n          <p class=\"special\" style=\"width: 350px; padding: 15px 0 15px 0; margin: 15px 0 15px 0; border-top: 1px solid #788fce; border-bottom: 1px solid #7cade3;\">\n          <strong>company name</strong> Libertas Yachting.<br />\n          <strong>address</strong> LA Guiltiere 53110 France.<br />\n          <strong>tel/fax</strong> +22 2 43 43 0367<br />\n\n          <strong>mobile</strong> +33 (6) 510-3372<br />\n          <strong>e-mail</strong> <a href=\"mailto:\">info@libertas-yaching.com</a> </p>\n          <p class=\"special\"> <strong>bank name</strong> Credit Agricole.<br />\n\n          <strong>bank account number</strong> 11100104-13381729-01000003<br />\n          <strong>tax number</strong> 13381729-2-41<br />\n          <strong>IBAN</strong> HU24 11100104-13381729-01000003<br />\n          <strong>trade registration number</strong> CG01-09-867769<br />\n\n          <strong>statistical code</strong> 13381729-7222-113-01 </p>\n          <p style=\"width: 350px; padding: 15px 0 0 0; margin: 15px 0 0 0; border-top: 1px solid #8cbbee;\"> </p>\n          <span></span>\n        </div>\n        <div class=\"about_col2\">\n          <h2>Skippers life</h2>\n\n          <div id=\"s_pandadisplay\">\n            <div id=\"s_pandadisplay_bottom\"></div>\n            <div class=\"s_pandadisplay_top\"></div>\n            <div class=\"s_pandadisplay_controls\"> <a  href=\"#\" onclick=\"return dopanda('display_bottom','prev');\">prev</a> / <a  href=\"#\" onclick=\"return dopanda('display_bottom','next');\">next</a> </div>\n            <div id=\"s_pandadisplay_bottom_content\" class=\"s_pandadisplay_content\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_0\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_1\" style=\"display:none;\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_2\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_3\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet,</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_4\" style=\"display:none;\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_5\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet,</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_6\" style=\"display:none;\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_7\" style=\"display:none;\">\n              <h3>Libertas HQ</h3>\n              <p>Lorem ipsum dolor sit amet,</p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n    </div>\n    <div id=\"s_robot\">\n      <div id=\"s_robot_blink\">\n        <div id=\"s_smoke\" style=\"position: absolute;filter:alpha(opacity=20); opacity: .20; left:162px; top:-66px;\"><img src=\"images/about/s_smoke.gif\" alt=\"cigarette smoke\" /></div>\n      </div>\n    </div>\n\n  </div>\n</div>\n                </div>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:164:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:184:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:262:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_view_rendering.rb:61:in `render'
+/usr/home/mrstocks/Libertas-Yachting/app/views/layouts/libertas.rhtml:40:in `_run_rhtml_app47views47layouts47libertas46rhtml'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:301:in `with_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:30:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_view_rendering.rb:61:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:347:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_view_rendering.rb:61:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render_without_active_scaffold'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_controller_rendering.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:44: syntax error, unexpected kDO, expecting kEND
+..._with_index {|item, index|} do |t| ; @output_buffer.concat "...
+                              ^
+/usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:164: syntax error, unexpected kENSURE, expecting $end) on line #44 of app/views/libertas/_about.rhtml:
+41:               <div id="s_pandaid_top"></div>
+42:               <div class="s_pandaid_controls"> <a href="#" onclick="return dopanda('id_top','prev');">prev</a> / <a href="#" onclick="return dopanda('id_top','next');">next</a> </div>
+43: 
+44:               <% @testimonial.each_with_index {|item, index|} do |t| %>
+45:                 <%= debug item %>
+46:               <% end %> 
+47:               <div id="s_pandaid_top_content" class="s_pandaid_content">
+
+    app/views/libertas/_about.rhtml:164:in `compile!'
+    app/views/layouts/libertas.rhtml:40:in `_run_rhtml_app47views47layouts47libertas46rhtml'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (136.8ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 01:57:56) [GET]
+  [4;35;1mTestimonial Load (0.7ms)[0m   [0mSELECT * FROM `testimonials` ORDER BY testimonials.id DESC LIMIT 1[0m
+Rendering template within layouts/libertas
+Rendering libertas/index
+ERROR: compiling _run_rhtml_app47views47libertas47_about46rhtml_locals_about_object RAISED compile error
+/usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:164: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_rhtml_app47views47libertas47_about46rhtml_locals_about_object(local_assigns)
+            old_output_buffer = output_buffer;about = local_assigns[:about];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<a name=\"section_about\"></a>\n<a name=\"section_about_who\"></a><a name=\"section_about_contact\"></a>\n<div class=\"sky\"  id=\"roll_sky_2\">\n\n  <div class=\"fitter\">\n    <div class=\"content\">\n      <div class=\"header\">\n        <h1><a href=\"#section_about\" onclick=\"return smoothto('section_about');\">About us</a></h1>\n        <ul>\n          <li><a href=\"#section_about\"   onclick=\"return smoothto('section_about');\" class=\"active\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 40px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">About</span></span><span class=\"link_right\"></span></span></a></li>\n          <li><a href=\"#section_main\"    onclick=\"return smoothto('section_main');\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 30px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">Main</span></span><span class=\"link_right\"></span></span></a></li>\n          <li><a href=\"#section_works\"   onclick=\"return smoothto('section_works');\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 40px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">Boats</span></span><span class=\"link_right\"></span></span></a></li>\n          <li><a href=\"#section_goodies\" onclick=\"return smoothto('section_goodies');\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 50px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">Marinas</span></span><span class=\"link_right\"></span></span></a></li>\n        </ul>\n      </div>\n      <div style=\"visibility:hidden; height:0; overflow:hidden top:0; left:0;\"> <img src=\"images/about/s_display.png\" alt=\"\" /> <img src=\"images/about/s_pandadisplay.png\" alt=\"\" /> </div>\n      <div id=\"abouttext\">\n\n        <ul>\n          <li><a href=\"#section_about_who\" onclick=\"tab_select_about(this.id);return smoothto('section_about_who');\" id=\"link_about_who\" class=\"active\"><span class=\"link_bottom\"></span><span class=\"link_top\">Who we are</span></a></li>\n          <li><a href=\"#section_about_contact\" onclick=\"tab_select_about(this.id);return smoothto('section_about_contact');\" id=\"link_about_contact\"><span class=\"link_bottom\"></span><span class=\"link_top\">Contact us</span></a></li>\n        </ul>\n        <div id=\"about_who\" class=\"abouttextbox\">\n          <div class=\"about_col1\">\n            <h2>About us</h2>\n\n            <span></span>\n            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n            <p>estibulum sollicitudin malesuada arcu, non porttitor tortor accumsan sit amet.</p>\n            <p>Phasellus luctus sem nibh, nec adipiscing lacus. Aliquam id magna a sapien semper blandit id eu ligula. Donec interdum, erat dignissim tincidunt ornare, leo nisi blandit enim.</p>\n            <p>Proin nunc magna, auctor at dictum ac, suscipit nec urna. Mauris viverra sagittis ornare. Aliquam blandit velit quis leo porta vestibulum non ac eros. Donec pellentesque felis vel erat accumsan vestibulum consequat massa ornare. Nam non elementum nulla. In dapibus purus et ante consequat ut tristique eros aliquam. Sed et mauris enim. Ut consequat lectus at diam mollis sed semper sem auctor.</p>\n\n            <p>Proin commodo est et mauris vehicula in gravida erat facilisis. Sed id ante vitae ligula elementum scelerisque non quis ipsum. Proin commodo est et mauris vehicula in gravida erat facilisis. Sed id ante vitae ligula elementum scelerisque non quis ipsum.</p>\n            <p>Nullam vel ligula felis, nec accumsan nibh. Maecenas at laoreet tellus. Aliquam vitae tortor eget augue aliquet hendrerit.</p>\n          </div>\n          <div class=\"about_col2\">\n            <h2>What are people saying about us</h2>\n            <div id=\"s_pandaid\">\n\n              <div class=\"s_pandaid_bottom\"></div>\n              <div id=\"s_pandaid_top\"></div>\n              <div class=\"s_pandaid_controls\"> <a href=\"#\" onclick=\"return dopanda('id_top','prev');\">prev</a> / <a href=\"#\" onclick=\"return dopanda('id_top','next');\">next</a> </div>\n\n              "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  @testimonial.each_with_index {|item, index|} ; @output_buffer.concat "\n                "
+; @output_buffer.concat(( debug item ).to_s); @output_buffer.concat "\n              "
+;  end ; @output_buffer.concat " \n              <div id=\"s_pandaid_top_content\" class=\"s_pandaid_content\">\n                <h3>trn</h3>\n\n                <p>Graphic Artist</p>\n                <p>Works as a graphic artist.</p>\n              </div>\n              <div id=\"s_pandaid_top_0\" style=\"display:none;\">\n                <h3>davidope</h3>\n                <p>creative director and CEO</p>\n                <p>.</p>\n\n              </div>\n              <div id=\"s_pandaid_top_1\" style=\"display:none;\">\n                <h3>Ati de Luxe.</h3>\n                <p>Finances</p>\n                <p>.</p>\n              </div>\n              <div id=\"s_pandaid_top_2\" style=\"display:none;\">\n\n                <h3>Robby, the robot</h3>\n                <p>Official awesome robot</p>\n                <p>A friendly robot from next door, usually he's in the office, chillin. out.</p>\n              </div>\n              <div id=\"s_pandaid_top_3\" style=\"display:none;\">\n                <h3>trn</h3>\n                <p>Graphic Artist</p>\n\n                <p>Works as a graphic artist.</p>\n              </div>  \n            </div>\n          </div>\n        </div>\n      </div>\n      <div id=\"about_contact\" style=\"display:none;\" class=\"abouttextbox\">\n        <div class=\"about_col1\">\n          <h2>Contact us</h2>\n\n          <p>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna !\n          </p>\n          <p class=\"special\" style=\"width: 350px; padding: 15px 0 15px 0; margin: 15px 0 15px 0; border-top: 1px solid #788fce; border-bottom: 1px solid #7cade3;\">\n          <strong>company name</strong> Libertas Yachting.<br />\n          <strong>address</strong> LA Guiltiere 53110 France.<br />\n          <strong>tel/fax</strong> +22 2 43 43 0367<br />\n\n          <strong>mobile</strong> +33 (6) 510-3372<br />\n          <strong>e-mail</strong> <a href=\"mailto:\">info@libertas-yaching.com</a> </p>\n          <p class=\"special\"> <strong>bank name</strong> Credit Agricole.<br />\n\n          <strong>bank account number</strong> 11100104-13381729-01000003<br />\n          <strong>tax number</strong> 13381729-2-41<br />\n          <strong>IBAN</strong> HU24 11100104-13381729-01000003<br />\n          <strong>trade registration number</strong> CG01-09-867769<br />\n\n          <strong>statistical code</strong> 13381729-7222-113-01 </p>\n          <p style=\"width: 350px; padding: 15px 0 0 0; margin: 15px 0 0 0; border-top: 1px solid #8cbbee;\"> </p>\n          <span></span>\n        </div>\n        <div class=\"about_col2\">\n          <h2>Skippers life</h2>\n\n          <div id=\"s_pandadisplay\">\n            <div id=\"s_pandadisplay_bottom\"></div>\n            <div class=\"s_pandadisplay_top\"></div>\n            <div class=\"s_pandadisplay_controls\"> <a  href=\"#\" onclick=\"return dopanda('display_bottom','prev');\">prev</a> / <a  href=\"#\" onclick=\"return dopanda('display_bottom','next');\">next</a> </div>\n            <div id=\"s_pandadisplay_bottom_content\" class=\"s_pandadisplay_content\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_0\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_1\" style=\"display:none;\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_2\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_3\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet,</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_4\" style=\"display:none;\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_5\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet,</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_6\" style=\"display:none;\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_7\" style=\"display:none;\">\n              <h3>Libertas HQ</h3>\n              <p>Lorem ipsum dolor sit amet,</p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n    </div>\n    <div id=\"s_robot\">\n      <div id=\"s_robot_blink\">\n        <div id=\"s_smoke\" style=\"position: absolute;filter:alpha(opacity=20); opacity: .20; left:162px; top:-66px;\"><img src=\"images/about/s_smoke.gif\" alt=\"cigarette smoke\" /></div>\n      </div>\n    </div>\n\n  </div>\n</div>\n                </div>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:164:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:184:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:262:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_view_rendering.rb:61:in `render'
+/usr/home/mrstocks/Libertas-Yachting/app/views/layouts/libertas.rhtml:40:in `_run_rhtml_app47views47layouts47libertas46rhtml'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:301:in `with_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:30:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_view_rendering.rb:61:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:347:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_view_rendering.rb:61:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render_without_active_scaffold'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_controller_rendering.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:164: syntax error, unexpected kENSURE, expecting $end) on line #164 of app/views/libertas/_about.rhtml:
+161:                 </div>
+
+    app/views/libertas/_about.rhtml:164:in `compile!'
+    app/views/layouts/libertas.rhtml:40:in `_run_rhtml_app47views47layouts47libertas46rhtml'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (250.6ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 01:58:11) [GET]
+  [4;35;1mTestimonial Load (0.7ms)[0m   [0mSELECT * FROM `testimonials` ORDER BY testimonials.id DESC LIMIT 1[0m
+Rendering template within layouts/libertas
+Rendering libertas/index
+ERROR: compiling _run_rhtml_app47views47libertas47_about46rhtml_locals_about_object RAISED compile error
+/usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:164: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_rhtml_app47views47libertas47_about46rhtml_locals_about_object(local_assigns)
+            old_output_buffer = output_buffer;about = local_assigns[:about];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<a name=\"section_about\"></a>\n<a name=\"section_about_who\"></a><a name=\"section_about_contact\"></a>\n<div class=\"sky\"  id=\"roll_sky_2\">\n\n  <div class=\"fitter\">\n    <div class=\"content\">\n      <div class=\"header\">\n        <h1><a href=\"#section_about\" onclick=\"return smoothto('section_about');\">About us</a></h1>\n        <ul>\n          <li><a href=\"#section_about\"   onclick=\"return smoothto('section_about');\" class=\"active\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 40px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">About</span></span><span class=\"link_right\"></span></span></a></li>\n          <li><a href=\"#section_main\"    onclick=\"return smoothto('section_main');\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 30px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">Main</span></span><span class=\"link_right\"></span></span></a></li>\n          <li><a href=\"#section_works\"   onclick=\"return smoothto('section_works');\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 40px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">Boats</span></span><span class=\"link_right\"></span></span></a></li>\n          <li><a href=\"#section_goodies\" onclick=\"return smoothto('section_goodies');\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 50px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">Marinas</span></span><span class=\"link_right\"></span></span></a></li>\n        </ul>\n      </div>\n      <div style=\"visibility:hidden; height:0; overflow:hidden top:0; left:0;\"> <img src=\"images/about/s_display.png\" alt=\"\" /> <img src=\"images/about/s_pandadisplay.png\" alt=\"\" /> </div>\n      <div id=\"abouttext\">\n\n        <ul>\n          <li><a href=\"#section_about_who\" onclick=\"tab_select_about(this.id);return smoothto('section_about_who');\" id=\"link_about_who\" class=\"active\"><span class=\"link_bottom\"></span><span class=\"link_top\">Who we are</span></a></li>\n          <li><a href=\"#section_about_contact\" onclick=\"tab_select_about(this.id);return smoothto('section_about_contact');\" id=\"link_about_contact\"><span class=\"link_bottom\"></span><span class=\"link_top\">Contact us</span></a></li>\n        </ul>\n        <div id=\"about_who\" class=\"abouttextbox\">\n          <div class=\"about_col1\">\n            <h2>About us</h2>\n\n            <span></span>\n            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n            <p>estibulum sollicitudin malesuada arcu, non porttitor tortor accumsan sit amet.</p>\n            <p>Phasellus luctus sem nibh, nec adipiscing lacus. Aliquam id magna a sapien semper blandit id eu ligula. Donec interdum, erat dignissim tincidunt ornare, leo nisi blandit enim.</p>\n            <p>Proin nunc magna, auctor at dictum ac, suscipit nec urna. Mauris viverra sagittis ornare. Aliquam blandit velit quis leo porta vestibulum non ac eros. Donec pellentesque felis vel erat accumsan vestibulum consequat massa ornare. Nam non elementum nulla. In dapibus purus et ante consequat ut tristique eros aliquam. Sed et mauris enim. Ut consequat lectus at diam mollis sed semper sem auctor.</p>\n\n            <p>Proin commodo est et mauris vehicula in gravida erat facilisis. Sed id ante vitae ligula elementum scelerisque non quis ipsum. Proin commodo est et mauris vehicula in gravida erat facilisis. Sed id ante vitae ligula elementum scelerisque non quis ipsum.</p>\n            <p>Nullam vel ligula felis, nec accumsan nibh. Maecenas at laoreet tellus. Aliquam vitae tortor eget augue aliquet hendrerit.</p>\n          </div>\n          <div class=\"about_col2\">\n            <h2>What are people saying about us</h2>\n            <div id=\"s_pandaid\">\n\n              <div class=\"s_pandaid_bottom\"></div>\n              <div id=\"s_pandaid_top\"></div>\n              <div class=\"s_pandaid_controls\"> <a href=\"#\" onclick=\"return dopanda('id_top','prev');\">prev</a> / <a href=\"#\" onclick=\"return dopanda('id_top','next');\">next</a> </div>\n\n              "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  @testimonial.each_with_index {|item, index|} 
+@output_buffer.concat "                "; @output_buffer.concat(( debug item ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat " \n              <div id=\"s_pandaid_top_content\" class=\"s_pandaid_content\">\n                <h3>trn</h3>\n\n                <p>Graphic Artist</p>\n                <p>Works as a graphic artist.</p>\n              </div>\n              <div id=\"s_pandaid_top_0\" style=\"display:none;\">\n                <h3>davidope</h3>\n                <p>creative director and CEO</p>\n                <p>.</p>\n\n              </div>\n              <div id=\"s_pandaid_top_1\" style=\"display:none;\">\n                <h3>Ati de Luxe.</h3>\n                <p>Finances</p>\n                <p>.</p>\n              </div>\n              <div id=\"s_pandaid_top_2\" style=\"display:none;\">\n\n                <h3>Robby, the robot</h3>\n                <p>Official awesome robot</p>\n                <p>A friendly robot from next door, usually he's in the office, chillin. out.</p>\n              </div>\n              <div id=\"s_pandaid_top_3\" style=\"display:none;\">\n                <h3>trn</h3>\n                <p>Graphic Artist</p>\n\n                <p>Works as a graphic artist.</p>\n              </div>  \n            </div>\n          </div>\n        </div>\n      </div>\n      <div id=\"about_contact\" style=\"display:none;\" class=\"abouttextbox\">\n        <div class=\"about_col1\">\n          <h2>Contact us</h2>\n\n          <p>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna !\n          </p>\n          <p class=\"special\" style=\"width: 350px; padding: 15px 0 15px 0; margin: 15px 0 15px 0; border-top: 1px solid #788fce; border-bottom: 1px solid #7cade3;\">\n          <strong>company name</strong> Libertas Yachting.<br />\n          <strong>address</strong> LA Guiltiere 53110 France.<br />\n          <strong>tel/fax</strong> +22 2 43 43 0367<br />\n\n          <strong>mobile</strong> +33 (6) 510-3372<br />\n          <strong>e-mail</strong> <a href=\"mailto:\">info@libertas-yaching.com</a> </p>\n          <p class=\"special\"> <strong>bank name</strong> Credit Agricole.<br />\n\n          <strong>bank account number</strong> 11100104-13381729-01000003<br />\n          <strong>tax number</strong> 13381729-2-41<br />\n          <strong>IBAN</strong> HU24 11100104-13381729-01000003<br />\n          <strong>trade registration number</strong> CG01-09-867769<br />\n\n          <strong>statistical code</strong> 13381729-7222-113-01 </p>\n          <p style=\"width: 350px; padding: 15px 0 0 0; margin: 15px 0 0 0; border-top: 1px solid #8cbbee;\"> </p>\n          <span></span>\n        </div>\n        <div class=\"about_col2\">\n          <h2>Skippers life</h2>\n\n          <div id=\"s_pandadisplay\">\n            <div id=\"s_pandadisplay_bottom\"></div>\n            <div class=\"s_pandadisplay_top\"></div>\n            <div class=\"s_pandadisplay_controls\"> <a  href=\"#\" onclick=\"return dopanda('display_bottom','prev');\">prev</a> / <a  href=\"#\" onclick=\"return dopanda('display_bottom','next');\">next</a> </div>\n            <div id=\"s_pandadisplay_bottom_content\" class=\"s_pandadisplay_content\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_0\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_1\" style=\"display:none;\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_2\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_3\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet,</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_4\" style=\"display:none;\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_5\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet,</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_6\" style=\"display:none;\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_7\" style=\"display:none;\">\n              <h3>Libertas HQ</h3>\n              <p>Lorem ipsum dolor sit amet,</p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n    </div>\n    <div id=\"s_robot\">\n      <div id=\"s_robot_blink\">\n        <div id=\"s_smoke\" style=\"position: absolute;filter:alpha(opacity=20); opacity: .20; left:162px; top:-66px;\"><img src=\"images/about/s_smoke.gif\" alt=\"cigarette smoke\" /></div>\n      </div>\n    </div>\n\n  </div>\n</div>\n                </div>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:164:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:184:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:262:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_view_rendering.rb:61:in `render'
+/usr/home/mrstocks/Libertas-Yachting/app/views/layouts/libertas.rhtml:40:in `_run_rhtml_app47views47layouts47libertas46rhtml'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:301:in `with_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:30:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_view_rendering.rb:61:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:347:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_view_rendering.rb:61:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render_without_active_scaffold'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_controller_rendering.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:164: syntax error, unexpected kENSURE, expecting $end) on line #164 of app/views/libertas/_about.rhtml:
+161:                 </div>
+
+    app/views/libertas/_about.rhtml:164:in `compile!'
+    app/views/layouts/libertas.rhtml:40:in `_run_rhtml_app47views47layouts47libertas46rhtml'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (255.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 01:58:34) [GET]
+  [4;35;1mTestimonial Load (0.7ms)[0m   [0mSELECT * FROM `testimonials` ORDER BY testimonials.id DESC LIMIT 1[0m
+Rendering template within layouts/libertas
+Rendering libertas/index
+ERROR: compiling _run_rhtml_app47views47libertas47_about46rhtml_locals_about_object RAISED compile error
+/usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:164: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_rhtml_app47views47libertas47_about46rhtml_locals_about_object(local_assigns)
+            old_output_buffer = output_buffer;about = local_assigns[:about];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<a name=\"section_about\"></a>\n<a name=\"section_about_who\"></a><a name=\"section_about_contact\"></a>\n<div class=\"sky\"  id=\"roll_sky_2\">\n\n  <div class=\"fitter\">\n    <div class=\"content\">\n      <div class=\"header\">\n        <h1><a href=\"#section_about\" onclick=\"return smoothto('section_about');\">About us</a></h1>\n        <ul>\n          <li><a href=\"#section_about\"   onclick=\"return smoothto('section_about');\" class=\"active\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 40px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">About</span></span><span class=\"link_right\"></span></span></a></li>\n          <li><a href=\"#section_main\"    onclick=\"return smoothto('section_main');\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 30px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">Main</span></span><span class=\"link_right\"></span></span></a></li>\n          <li><a href=\"#section_works\"   onclick=\"return smoothto('section_works');\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 40px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">Boats</span></span><span class=\"link_right\"></span></span></a></li>\n          <li><a href=\"#section_goodies\" onclick=\"return smoothto('section_goodies');\"><span class=\"link_bg\"><span class=\"link_left\"></span><span class=\"link_center\" style=\"width: 50px;\" ><span class=\"link_bottom\"></span><span class=\"link_top\">Marinas</span></span><span class=\"link_right\"></span></span></a></li>\n        </ul>\n      </div>\n      <div style=\"visibility:hidden; height:0; overflow:hidden top:0; left:0;\"> <img src=\"images/about/s_display.png\" alt=\"\" /> <img src=\"images/about/s_pandadisplay.png\" alt=\"\" /> </div>\n      <div id=\"abouttext\">\n\n        <ul>\n          <li><a href=\"#section_about_who\" onclick=\"tab_select_about(this.id);return smoothto('section_about_who');\" id=\"link_about_who\" class=\"active\"><span class=\"link_bottom\"></span><span class=\"link_top\">Who we are</span></a></li>\n          <li><a href=\"#section_about_contact\" onclick=\"tab_select_about(this.id);return smoothto('section_about_contact');\" id=\"link_about_contact\"><span class=\"link_bottom\"></span><span class=\"link_top\">Contact us</span></a></li>\n        </ul>\n        <div id=\"about_who\" class=\"abouttextbox\">\n          <div class=\"about_col1\">\n            <h2>About us</h2>\n\n            <span></span>\n            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n            <p>estibulum sollicitudin malesuada arcu, non porttitor tortor accumsan sit amet.</p>\n            <p>Phasellus luctus sem nibh, nec adipiscing lacus. Aliquam id magna a sapien semper blandit id eu ligula. Donec interdum, erat dignissim tincidunt ornare, leo nisi blandit enim.</p>\n            <p>Proin nunc magna, auctor at dictum ac, suscipit nec urna. Mauris viverra sagittis ornare. Aliquam blandit velit quis leo porta vestibulum non ac eros. Donec pellentesque felis vel erat accumsan vestibulum consequat massa ornare. Nam non elementum nulla. In dapibus purus et ante consequat ut tristique eros aliquam. Sed et mauris enim. Ut consequat lectus at diam mollis sed semper sem auctor.</p>\n\n            <p>Proin commodo est et mauris vehicula in gravida erat facilisis. Sed id ante vitae ligula elementum scelerisque non quis ipsum. Proin commodo est et mauris vehicula in gravida erat facilisis. Sed id ante vitae ligula elementum scelerisque non quis ipsum.</p>\n            <p>Nullam vel ligula felis, nec accumsan nibh. Maecenas at laoreet tellus. Aliquam vitae tortor eget augue aliquet hendrerit.</p>\n          </div>\n          <div class=\"about_col2\">\n            <h2>What are people saying about us</h2>\n            <div id=\"s_pandaid\">\n\n              <div class=\"s_pandaid_bottom\"></div>\n              <div id=\"s_pandaid_top\"></div>\n              <div class=\"s_pandaid_controls\"> <a href=\"#\" onclick=\"return dopanda('id_top','prev');\">prev</a> / <a href=\"#\" onclick=\"return dopanda('id_top','next');\">next</a> </div>\n\n              "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  @testimonial.each_with_index {|item, index|} 
+@output_buffer.concat "                "; @output_buffer.concat(( debug item ).to_s); @output_buffer.concat "\n                "
+;  end ; @output_buffer.concat " \n              <div id=\"s_pandaid_top_content\" class=\"s_pandaid_content\">\n                <h3>trn</h3>\n\n                <p>Graphic Artist</p>\n                <p>Works as a graphic artist.</p>\n              </div>\n              <div id=\"s_pandaid_top_0\" style=\"display:none;\">\n                <h3>davidope</h3>\n                <p>creative director and CEO</p>\n                <p>.</p>\n\n              </div>\n              <div id=\"s_pandaid_top_1\" style=\"display:none;\">\n                <h3>Ati de Luxe.</h3>\n                <p>Finances</p>\n                <p>.</p>\n              </div>\n              <div id=\"s_pandaid_top_2\" style=\"display:none;\">\n\n                <h3>Robby, the robot</h3>\n                <p>Official awesome robot</p>\n                <p>A friendly robot from next door, usually he's in the office, chillin. out.</p>\n              </div>\n              <div id=\"s_pandaid_top_3\" style=\"display:none;\">\n                <h3>trn</h3>\n                <p>Graphic Artist</p>\n\n                <p>Works as a graphic artist.</p>\n              </div>  \n            </div>\n          </div>\n        </div>\n      </div>\n      <div id=\"about_contact\" style=\"display:none;\" class=\"abouttextbox\">\n        <div class=\"about_col1\">\n          <h2>Contact us</h2>\n\n          <p>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna !\n          </p>\n          <p class=\"special\" style=\"width: 350px; padding: 15px 0 15px 0; margin: 15px 0 15px 0; border-top: 1px solid #788fce; border-bottom: 1px solid #7cade3;\">\n          <strong>company name</strong> Libertas Yachting.<br />\n          <strong>address</strong> LA Guiltiere 53110 France.<br />\n          <strong>tel/fax</strong> +22 2 43 43 0367<br />\n\n          <strong>mobile</strong> +33 (6) 510-3372<br />\n          <strong>e-mail</strong> <a href=\"mailto:\">info@libertas-yaching.com</a> </p>\n          <p class=\"special\"> <strong>bank name</strong> Credit Agricole.<br />\n\n          <strong>bank account number</strong> 11100104-13381729-01000003<br />\n          <strong>tax number</strong> 13381729-2-41<br />\n          <strong>IBAN</strong> HU24 11100104-13381729-01000003<br />\n          <strong>trade registration number</strong> CG01-09-867769<br />\n\n          <strong>statistical code</strong> 13381729-7222-113-01 </p>\n          <p style=\"width: 350px; padding: 15px 0 0 0; margin: 15px 0 0 0; border-top: 1px solid #8cbbee;\"> </p>\n          <span></span>\n        </div>\n        <div class=\"about_col2\">\n          <h2>Skippers life</h2>\n\n          <div id=\"s_pandadisplay\">\n            <div id=\"s_pandadisplay_bottom\"></div>\n            <div class=\"s_pandadisplay_top\"></div>\n            <div class=\"s_pandadisplay_controls\"> <a  href=\"#\" onclick=\"return dopanda('display_bottom','prev');\">prev</a> / <a  href=\"#\" onclick=\"return dopanda('display_bottom','next');\">next</a> </div>\n            <div id=\"s_pandadisplay_bottom_content\" class=\"s_pandadisplay_content\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_0\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_1\" style=\"display:none;\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_2\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_3\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet,</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_4\" style=\"display:none;\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_5\" style=\"display:none;\">\n              <h3>Stocks Oliver</h3>\n              <p>Lorem ipsum dolor sit amet,</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_6\" style=\"display:none;\">\n              <h3>Daniel Razi</h3>\n              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis enim quam, posuere aliquam urna. Praesent faucibus tristique adipiscing.</p>\n            </div>\n            <div id=\"s_pandadisplay_bottom_7\" style=\"display:none;\">\n              <h3>Libertas HQ</h3>\n              <p>Lorem ipsum dolor sit amet,</p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n    </div>\n    <div id=\"s_robot\">\n      <div id=\"s_robot_blink\">\n        <div id=\"s_smoke\" style=\"position: absolute;filter:alpha(opacity=20); opacity: .20; left:162px; top:-66px;\"><img src=\"images/about/s_smoke.gif\" alt=\"cigarette smoke\" /></div>\n      </div>\n    </div>\n\n  </div>\n</div>\n                </div>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:164:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:184:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:262:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_view_rendering.rb:61:in `render'
+/usr/home/mrstocks/Libertas-Yachting/app/views/layouts/libertas.rhtml:40:in `_run_rhtml_app47views47layouts47libertas46rhtml'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:301:in `with_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:30:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_view_rendering.rb:61:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:347:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_view_rendering.rb:61:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render_without_active_scaffold'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render_without_active_scaffold'
+/usr/home/mrstocks/Libertas-Yachting/vendor/plugins/active_scaffold/lib/extensions/action_controller_rendering.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/usr/home/mrstocks/Libertas-Yachting/app/views/libertas/_about.rhtml:164: syntax error, unexpected kENSURE, expecting $end) on line #164 of app/views/libertas/_about.rhtml:
+161:                 </div>
+
+    app/views/libertas/_about.rhtml:164:in `compile!'
+    app/views/layouts/libertas.rhtml:40:in `_run_rhtml_app47views47layouts47libertas46rhtml'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (139.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 01:58:53) [GET]
+  [4;35;1mTestimonial Load (0.7ms)[0m   [0mSELECT * FROM `testimonials` ORDER BY testimonials.id DESC LIMIT 1[0m
+Rendering template within layouts/libertas
+Rendering libertas/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each_with_index) on line #44 of app/views/libertas/_about.rhtml:
+41:               <div id="s_pandaid_top"></div>
+42:               <div class="s_pandaid_controls"> <a href="#" onclick="return dopanda('id_top','prev');">prev</a> / <a href="#" onclick="return dopanda('id_top','next');">next</a> </div>
+43: 
+44:               <% @testimonial.each_with_index { |item, index| -%>
+45:                 <%= debug item %>
+46:                 <% } -%> 
+47:               <div id="s_pandaid_top_content" class="s_pandaid_content">
+
+    app/views/libertas/_about.rhtml:44:in `_run_rhtml_app47views47libertas47_about46rhtml_locals_about_object'
+    app/views/layouts/libertas.rhtml:40:in `_run_rhtml_app47views47layouts47libertas46rhtml'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (200.7ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 01:58:53) [GET]
+  [4;35;1mTestimonial Load (0.8ms)[0m   [0mSELECT * FROM `testimonials` ORDER BY testimonials.id DESC LIMIT 1[0m
+Rendering template within layouts/libertas
+Rendering libertas/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each_with_index) on line #44 of app/views/libertas/_about.rhtml:
+41:               <div id="s_pandaid_top"></div>
+42:               <div class="s_pandaid_controls"> <a href="#" onclick="return dopanda('id_top','prev');">prev</a> / <a href="#" onclick="return dopanda('id_top','next');">next</a> </div>
+43: 
+44:               <% @testimonial.each_with_index { |item, index| -%>
+45:                 <%= debug item %>
+46:                 <% } -%> 
+47:               <div id="s_pandaid_top_content" class="s_pandaid_content">
+
+    app/views/libertas/_about.rhtml:44:in `_run_rhtml_app47views47libertas47_about46rhtml_locals_about_object'
+    app/views/layouts/libertas.rhtml:40:in `_run_rhtml_app47views47layouts47libertas46rhtml'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (253.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 01:59:09) [GET]
+  [4;35;1mTestimonial Load (0.7ms)[0m   [0mSELECT * FROM `testimonials` ORDER BY testimonials.id DESC LIMIT 1[0m
+Rendering template within layouts/libertas
+Rendering libertas/index
+  [4;36;1mTestimonial Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+
+ActionView::TemplateError (undefined method `each_with_index' for #<Testimonial:0x2946f108>) on line #44 of app/views/libertas/_about.rhtml:
+41:               <div id="s_pandaid_top"></div>
+42:               <div class="s_pandaid_controls"> <a href="#" onclick="return dopanda('id_top','prev');">prev</a> / <a href="#" onclick="return dopanda('id_top','next');">next</a> </div>
+43: 
+44:               <% @testimonials.each_with_index { |item, index| -%>
+45:                 <%= debug item %>
+46:                 <% } -%> 
+47:               <div id="s_pandaid_top_content" class="s_pandaid_content">
+
+    app/views/libertas/_about.rhtml:44:in `_run_rhtml_app47views47libertas47_about46rhtml_locals_about_object'
+    app/views/layouts/libertas.rhtml:40:in `_run_rhtml_app47views47layouts47libertas46rhtml'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (258.3ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 02:02:20) [GET]
+  [4;36;1mTestimonial Load (0.8ms)[0m   [0;1mSELECT * FROM `testimonials` ORDER BY created_at DESC LIMIT 3[0m
+Rendering template within layouts/libertas
+Rendering libertas/index
+  [4;35;1mTestimonial Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+Rendered libertas/_about (21.1ms)
+Rendered libertas/_main (0.4ms)
+Rendered libertas/_works (0.4ms)
+Rendered libertas/_goodies (0.4ms)
+Completed in 48ms (View: 33, DB: 3) | 200 OK [http://www.meuh-meuh.net/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 86.214.141.49 at 2009-06-15 02:02:23) [GET]
+
+ActionController::RoutingError (No route matches "/swf/vollltv.swf" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 86.214.141.49 at 2009-06-15 02:02:26) [GET]
+
+ActionController::RoutingError (No route matches "/refs/saatchi/images/cover_arielkaltaktiv.jpg" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 02:04:04) [GET]
+  [4;35;1mTestimonial Load (0.7ms)[0m   [0mSELECT * FROM `testimonials` ORDER BY created_at DESC LIMIT 3[0m
+Rendering template within layouts/libertas
+Rendering libertas/index
+  [4;36;1mTestimonial Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendered libertas/_about (40.6ms)
+Rendered libertas/_main (0.4ms)
+Rendered libertas/_works (0.4ms)
+Rendered libertas/_goodies (0.4ms)
+Completed in 73ms (View: 59, DB: 3) | 200 OK [http://www.meuh-meuh.net/]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 86.214.141.49 at 2009-06-15 02:04:06) [GET]
+
+ActionController::RoutingError (No route matches "/swf/vollltv.swf" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 86.214.141.49 at 2009-06-15 02:04:09) [GET]
+
+ActionController::RoutingError (No route matches "/refs/saatchi/images/cover_arielkaltaktiv.jpg" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 02:10:50) [GET]
+  [4;36;1mTestimonial Load (0.8ms)[0m   [0;1mSELECT * FROM `testimonials` ORDER BY created_at DESC LIMIT 3[0m
+Rendering template within layouts/libertas
+Rendering libertas/index
+  [4;35;1mTestimonial Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+Rendered libertas/_about (27.9ms)
+Rendered libertas/_main (0.4ms)
+Rendered libertas/_works (0.6ms)
+Rendered libertas/_goodies (0.4ms)
+Completed in 189ms (View: 174, DB: 3) | 200 OK [http://www.meuh-meuh.net/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 86.214.141.49 at 2009-06-15 02:10:53) [GET]
+
+ActionController::RoutingError (No route matches "/swf/vollltv.swf" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 86.214.141.49 at 2009-06-15 02:10:56) [GET]
+
+ActionController::RoutingError (No route matches "/refs/saatchi/images/cover_arielkaltaktiv.jpg" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibertasController#index (for 86.214.141.49 at 2009-06-15 02:11:07) [GET]
+  [4;35;1mTestimonial Load (0.7ms)[0m   [0mSELECT * FROM `testimonials` ORDER BY created_at DESC LIMIT 3[0m
+Rendering template within layouts/libertas
+Rendering libertas/index
+  [4;36;1mTestimonial Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendered libertas/_about (8.0ms)
+Rendered libertas/_main (0.5ms)
+Rendered libertas/_works (0.4ms)
+Rendered libertas/_goodies (0.4ms)
+Completed in 35ms (View: 20, DB: 3) | 200 OK [http://www.meuh-meuh.net/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 86.214.141.49 at 2009-06-15 02:11:10) [GET]
+
+ActionController::RoutingError (No route matches "/swf/vollltv.swf" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 86.214.141.49 at 2009-06-15 02:11:13) [GET]
+
+ActionController::RoutingError (No route matches "/refs/saatchi/images/cover_arielkaltaktiv.jpg" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
