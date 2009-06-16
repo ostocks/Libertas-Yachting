@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090614173401) do
+ActiveRecord::Schema.define(:version => 20090615124054) do
 
   create_table "boats", :force => true do |t|
     t.string   "value",          :limit => 40, :null => false
@@ -46,6 +46,18 @@ ActiveRecord::Schema.define(:version => 20090614173401) do
     t.string "town",   :null => false
     t.string "adress"
   end
+
+  create_table "marinas_photos", :force => true do |t|
+    t.string   "title",        :null => false
+    t.string   "decription"
+    t.string   "path",         :null => false
+    t.boolean  "illustration", :null => false
+    t.integer  "marina_id",    :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "marinas_photos", ["marina_id"], :name => "index_marinas_photos_on_marina_id"
 
   create_table "photos", :force => true do |t|
     t.string   "filename"
